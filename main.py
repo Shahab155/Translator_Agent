@@ -71,7 +71,7 @@ btn = st.button("Translate")
 
 if btn and text:
     try:
-        with st.spinner("Translation in process........."):
+        with st.spinner("Translating........."):
             translated_text = asyncio.run(translate(text,lang))
             st.success(f"Translated into {lang}")
             st.info(f"Origional Text: {text}")
